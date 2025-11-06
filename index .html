@@ -1,0 +1,77 @@
+
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+
+</head>
+<body>
+<div class="  m-auto w-50 p-5 shadow-lg border-3 ">
+    <h1 class="text-uppercase">crud system</h1>
+<label for="">:product-name </label>
+<input type="text" class=" p-4 form-control shadow-lg " placeholder="product-name " id="product-name">
+
+<div id="alert" class="bg-danger alert-danger d-none"> 
+    <p>please fill it write</p>
+</div>
+
+<label for="">:product-catogary </label>
+
+<input type="text" class=" p-4 form-control shadow-lg"   placeholder="product-catogary" id="product-catogary">
+<label for="">:product-price</label>
+
+<input type="text" class=" p-4 form-control shadow-lg" placeholder="product-price" id="product-price">
+<label for="">:product-description</label>
+
+<textarea name="" id="product-description" class="form-contro p-4 shadow-lg w-100" cols="80" rows="7 " placeholder="product-description" >  </textarea>
+
+<button onclick="create()" class="btn btn-outline-dark" id="button1">add-product</button>
+<div id="alertall" class="bg-danger alert-danger d-none"> 
+    <p>please fill all of it write</p>
+</div>
+<button   onclick="clear1()" class="btn btn-outline-dark"> clear</button>
+
+
+
+
+
+
+
+
+</div>
+<input type="text" onkeyup="search_product()"  id="searchinput" class=" m-auto w-50 mt-5 mb-5 form-control shadow-lg" placeholder="search........">
+<div>
+    <div class="table-responsive ">
+        <table class="table  m-auto w-50 table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"> index</th>
+                    <th scope="col">name</th>
+                    <th scope="col"> category</th>
+                    <th scope="col">price</th>
+                    <th scope="col">description</th>
+                    <th scope="col">update</th>
+                    <th scope="col">delete</th>
+
+                </tr>
+            </thead>
+            <tbody id="trr">
+
+            </tbody>
+        </table>
+    </div>
+    
+</div>
+
+
+
+
+
+    
+
+    
+
+   <script src="js/jav.js"></script>
+</body>
+</html>
